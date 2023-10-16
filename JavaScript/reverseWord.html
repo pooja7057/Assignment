@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Words in a sentence</title>
+  </head>
+  <body>
+    
+  </body>
+  <script>
+    function reverseWords(str) {
+        
+        const word = str.split(' ');
+        const reverseWords = word.map(word => word.split('').reverse().join(''));
+        return reverseWords.join(' '); 
+    
+    }
+
+    const str = prompt("enter a string ");
+
+    const String = reverseWords(str);
+    console.log("Reversed words:", String);
+
+  </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-image: url(https://www.incquery.com/hubfs/assets/images/backgrounds/how-it-works-form.png);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #574a4a;
+    background-color: rgba(128, 139, 146, 0.7);
+    background-blend-mode:darken;
+    /* background-blend-mode:hard-light; */
+    font-size: 1.1em;
+	    height: 100vh;
+    font-family:'Poppins', sans-serif ;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    /* position: relative; */
+}
+
+#head{
+    font-size: 1.8em;
+}
+
+#content1{
+    width: 90%;
+    margin: auto ;
+}
+
+form {
+    background-color: rgba(226, 217, 217, 0.7);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 54%; */
+    width: 70%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 18px;
+    /* height: 100px; */
+    /* width: 250px; */
+}
+
+form .box{
+    width: 98.5%;
+    height: 2.0rem;
+    position: relative;
+    bottom: 10px;
+    margin-top: 13px;
+    border: 0;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color: #82acb9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+ input[type="email"], select {
+    width: 100%;
+    /* height: 30px; */
+    padding: 2px;
+    /* margin-top: 0; */
+    margin-bottom: 5px;
+}
+
+/* .checkbox label {
+     font-size: 62px! important;
+}  */
+input[type="checkbox"] {
+    /* margin-top: 5px; */
+    /* width: 5%; */ 
+    /* height: 30px;  */
+    /* margin-bottom: 2px; */
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 19px;
+    height: 19px;
+    
+}
+
+  #option select{
+    width: 98.5%;
+    height: 2.0rem;
+    position: relative;
+    bottom: 10px;
+    margin-top: 13px;
+    border-radius: 5px;
+    border: 0;
+  }
+
+  #content2{
+    margin-top: 10px;
+  }
+
+  #content2 label{
+    font-size: 17px;
+  }
+
+  input::placeholder{
+    font-size: 1.1em;
+    position: relative;
+    left: 10px;
+    width: 50%;
+    font-weight: 500;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+  /* .larger{
+    width: 20px;
+    height: 20px;
+  } */
+.main {
+    padding: 30px 0 30px;
+}
+  @media screen and (max-width: 600px){
+    form{
+        width : 100%;
+        margin: auto;
+    }
+	.main {
+    padding: 30px 16px 30px;
+}
+  }
