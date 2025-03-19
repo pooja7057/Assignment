@@ -1,0 +1,68 @@
+#slider {
+  width: 90%;
+  max-width: 800px; /* Balanced size for most devices */
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#slider img {
+  width: 100%;
+  height: auto;
+  max-height: 496px;
+  object-fit: cover;
+}
+
+#controls {
+  margin-top: 20px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Better spacing between buttons */
+}
+
+#controls button {
+  padding: 10px 20px;
+  /* margin-left:20px ; */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#controls button:disabled {
+  background-color: #A0A0A0; /* Grey out inactive buttons */
+  cursor: not-allowed;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  #slider {
+      max-width: 90%;
+  }
+
+  #controls button {
+      padding: 8px 16px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  #slider {
+      max-width: 100%;
+  }
+
+  img{
+    height: 100%;
+  }
+
+  #controls {
+      flex-direction: column;
+  }
+
+  #controls button {
+      width: 100%; /* Full-width buttons for easier tapping */
+  }
+}
